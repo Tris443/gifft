@@ -1,26 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Download</title>
   <style>
     body {
       margin: 0;
-      background: black;
+      background: white;
+      font-family: Arial, sans-serif;
+      color: #111;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       height: 100vh;
     }
+    .container {
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 12px;
+      font-size: 24px;
+    }
+    p {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
     img {
-      max-width: 95%;
-      max-height: 95%;
+      max-width: 90vw;
+      max-height: 60vh;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <a href="image.png" download>
-    <img src="image.png" alt="Tap to download">
-  </a>
+  <div class="container">
+    <h1>Download Image</h1>
+    <p>Tap the image below to save it</p>
+
+    <a href="image.png" download>
+      <img src="image.png" alt="Download image">
+    </a>
+  </div>
 </body>
 </html>
