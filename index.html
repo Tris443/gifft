@@ -25,10 +25,16 @@
       margin-bottom: 20px;
       font-size: 16px;
     }
+    .image-box {
+      background: #f2f2f2;   /* light gray backing */
+      padding: 20px;
+      border-radius: 12px;
+    }
     img {
       max-width: 90vw;
       max-height: 60vh;
       cursor: pointer;
+      display: block;
     }
   </style>
 </head>
@@ -37,9 +43,11 @@
     <h1>Download Image</h1>
     <p>Tap the image below to save it</p>
 
-    <a href="image.png" download>
-      <img src="image.png" alt="Download image">
-    </a>
+    <div class="image-box">
+      <a href="image.png" download>
+        <img src="image.png" alt="Download image">
+      </a>
+    </div>
   </div>
 </body>
 </html>
